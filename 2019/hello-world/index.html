@@ -280,6 +280,25 @@ code.has-jax {
 </style>
 
 
+
+<div id="git-comments"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+  var gitment = new Gitment({
+    id: 'hugo-integrated-gitment-plugin',
+    owner: 'powerLEO101',
+    repo: 'powerleo101.github.io',
+    oauth: {
+      client_id: '601b82559d0040bd36dd',
+      client_secret: '17e23eb12f52a2219569921a4d7b0cfcdb633dfe',
+    }
+  })
+  gitment.render('git-comments')
+</script>
+
+
+
      </div>
   </body>
 </html>
