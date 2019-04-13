@@ -40,8 +40,12 @@ theme = &amp;quot;LeaveIt&amp;quot;  主题配置 把主题文件夹里的 examp
       <pubDate>Sat, 13 Apr 2019 16:48:24 +0800</pubDate>
       
       <guid>http://powerleo101.github.io/2019/hello-world/</guid>
-      <description>hello-world!!!
-本站点的第一篇博文</description>
+      <description>本站点的第一篇博文
+以下为测试
+$233$
+$ 233 $
+$$ 233 $$
+[[ 233 ]]</description>
     </item>
     
   </channel>

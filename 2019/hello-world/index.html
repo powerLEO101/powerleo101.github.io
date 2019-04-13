@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Hello World",
     "headline" : "Hello World",
-    "description" : "hello-world!!!\n本站点的第一篇博文",
+    "description" : "本站点的第一篇博文\n以下为测试\n$233$\n$ 233 $\n$$ 233 $$\n[[ 233 ]]",
     "inLanguage" : "en-us",
     "author" : "Leo101",
     "creator" : "Leo101",
@@ -57,7 +57,7 @@
     "datePublished": "2019-04-13 16:48:24 \x2b0800 CST",
     "dateModified" : "2019-04-13 16:48:24 \x2b0800 CST",
     "url" : "http:\/\/powerleo101.github.io\/2019\/hello-world\/",
-    "wordCount" : "2",
+    "wordCount" : "12",
     "keywords" : [  "Leo101\x27s blog"]
 }
 </script>
@@ -115,6 +115,7 @@
         </div>
     </div>
 </nav>
+
     	 <main class="main">
           <div class="container">
       		
@@ -146,9 +147,17 @@
           
           
 
-          <p>hello-world!!!</p>
+          <p>本站点的第一篇博文</p>
 
-<p>本站点的第一篇博文</p>
+<p>以下为测试</p>
+
+<p>$233$</p>
+
+<p>$ 233 $</p>
+
+<p>$$ 233 $$</p>
+
+<p>[[ 233 ]]</p>
 
     </div>
 
@@ -232,6 +241,43 @@
     
   
 
+
+
+<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
 
 
      </div>
