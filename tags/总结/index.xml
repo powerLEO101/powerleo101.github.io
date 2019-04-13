@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Leo101&#39;s blog</title>
-    <link>http://powerleo101.github.io/posts/</link>
-    <description>Recent content in Posts on Leo101&#39;s blog</description>
+    <title>总结 on Leo101&#39;s blog</title>
+    <link>http://powerleo101.github.io/tags/%E6%80%BB%E7%BB%93/</link>
+    <description>Recent content in 总结 on Leo101&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 13 Apr 2019 17:29:18 +0800</lastBuildDate>
     
-	<atom:link href="http://powerleo101.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://powerleo101.github.io/tags/%E6%80%BB%E7%BB%93/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -32,16 +32,6 @@ theme = &amp;quot;LeaveIt&amp;quot;  主题配置 把主题文件夹里的 examp
 根据代码你会发现会有一个 About 是 404，只需要创建 about.md 这篇文章就会自动读取
 其他的就是一点小修改，不列举了
 写文章 使用命令</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>http://powerleo101.github.io/2019/hello-world/</link>
-      <pubDate>Sat, 13 Apr 2019 16:48:24 +0800</pubDate>
-      
-      <guid>http://powerleo101.github.io/2019/hello-world/</guid>
-      <description>hello-world!!!
-本站点的第一篇博文</description>
     </item>
     
   </channel>
