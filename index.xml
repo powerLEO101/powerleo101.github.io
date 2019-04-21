@@ -5,26 +5,56 @@
     <description>Recent content in Leo101&#39;s blog on Leo101&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Apr 2019 17:29:18 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 17 Apr 2019 19:09:24 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>About</title>
-      <link>http://powerleo101.github.io/about/</link>
-      <pubDate>Sat, 13 Apr 2019 16:36:23 +0800</pubDate>
+      <title>NOIP2008</title>
+      <link>http://powerleo101.github.io/2019/noip2008/</link>
+      <pubDate>Wed, 17 Apr 2019 19:09:24 +0800</pubDate>
       
-      <guid>http://powerleo101.github.io/about/</guid>
-      <description>&lt;p&gt;坐标: CN-HN-CS-CJ&lt;/p&gt;
+      <guid>http://powerleo101.github.io/2019/noip2008/</guid>
+      <description>
 
-&lt;p&gt;不定期更新&lt;/p&gt;
+&lt;h2 id=&#34;笨小猴&#34;&gt;笨小猴&lt;/h2&gt;
 
-&lt;p&gt;vim党&lt;/p&gt;
+&lt;p&gt;暴力找出出现次数最大最小的两个字符&lt;/p&gt;
 
-&lt;p&gt;你还在等什么，快来加入圣战吧!!!&lt;/p&gt;
+&lt;p&gt;再暴力判断是不是质数&lt;/p&gt;
 
-&lt;p&gt;QQ: 3256870400&lt;/p&gt;
+&lt;h2 id=&#34;火柴棒等式&#34;&gt;火柴棒等式&lt;/h2&gt;
 
-&lt;p&gt;EMAIL: powerleo101@outlook.com&lt;/p&gt;
+&lt;p&gt;先想一下这个等式最大是多少&lt;/p&gt;
+
+&lt;p&gt;每一位都是 1 肯定是最优的&lt;/p&gt;
+
+&lt;p&gt;那么也就是 $(24 - 4) / (3 * 2)$&lt;/p&gt;
+
+&lt;p&gt;大概是 1000&lt;/p&gt;
+
+&lt;p&gt;那么我们把 1~1000 这些数字所需的火柴都算出来&lt;/p&gt;
+
+&lt;p&gt;然后暴力匹配两两相加&lt;/p&gt;
+
+&lt;h2 id=&#34;传纸条&#34;&gt;传纸条&lt;/h2&gt;
+
+&lt;p&gt;首先我们可以吧问题转化成两个,都是 (1,1) 走向 (n, m)要求进过的路线不重复&lt;/p&gt;
+
+&lt;p&gt;设 $dp[i][j][k][l]$ 表示第一个人在 (i, j), 第二个人在 (k, l) 的最大贡献&lt;/p&gt;
+
+&lt;p&gt;转移就是从左边和上面的两个节点转移过来&lt;/p&gt;
+
+&lt;p&gt;在转移的过程中需要保证每个节点只被算到一次&lt;/p&gt;
+
+&lt;h2 id=&#34;双栈排序&#34;&gt;双栈排序&lt;/h2&gt;
+
+&lt;p&gt;可以发现一个若有一组位置 $i &amp;lt; j &amp;lt; k$, 使得 $p_k &amp;lt; p_i &amp;lt; p_j$,那么这组位置不能在一个栈里,需要用到第二个栈&lt;/p&gt;
+
+&lt;p&gt;用这些关系构建一个二分图,$n ^ 2$匹配每个节点,这个时候可以把不合法的情况判掉,因为要求字典序最小,所以优先选第一个栈&lt;/p&gt;
+
+&lt;p&gt;知道了每个节点在那个栈里,接下来就是贪心模拟&lt;/p&gt;
+
+&lt;p&gt;尽量放,知道不合法再弹出即可&lt;/p&gt;
 </description>
     </item>
     
@@ -158,7 +188,7 @@
 
 &lt;p&gt;&lt;a href=&#34;https://cnblogs.com/yzhx&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;母鸡&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://tony102.com&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;火爆泽哥Tony102&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://tony102.com/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;火爆泽哥Tony102&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;19届神仙&#34;&gt;19届神仙&lt;/h2&gt;
 
@@ -166,7 +196,7 @@
 
 &lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/heyujun&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;cj-slay王hyj&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/cj-xxz&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;xgzc&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/cj-xxz&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;xgzx&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/hbxblog&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;hbx&lt;/a&gt;&lt;/p&gt;
 
@@ -186,7 +216,27 @@
 
 &lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/cx233666/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;cx大聚聚&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.sycstudio.com&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;sycStudio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.sycstudio.com/&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;sycStudio&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://powerleo101.github.io/about/</link>
+      <pubDate>Sat, 13 Apr 2019 16:36:23 +0800</pubDate>
+      
+      <guid>http://powerleo101.github.io/about/</guid>
+      <description>&lt;p&gt;坐标: CN-HN-CS-CJ&lt;/p&gt;
+
+&lt;p&gt;不定期更新&lt;/p&gt;
+
+&lt;p&gt;vim党&lt;/p&gt;
+
+&lt;p&gt;你还在等什么，快来加入圣战吧!!!&lt;/p&gt;
+
+&lt;p&gt;QQ: 3256870400&lt;/p&gt;
+
+&lt;p&gt;EMAIL: powerleo101@outlook.com&lt;/p&gt;
 </description>
     </item>
     

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NOIP专题 on Leo101&#39;s blog</title>
+    <link>http://powerleo101.github.io/categories/noip%E4%B8%93%E9%A2%98/</link>
+    <description>Recent content in NOIP专题 on Leo101&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Apr 2019 19:09:24 +0800</lastBuildDate>
+    
+	<atom:link href="http://powerleo101.github.io/categories/noip%E4%B8%93%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NOIP2008</title>
+      <link>http://powerleo101.github.io/2019/noip2008/</link>
+      <pubDate>Wed, 17 Apr 2019 19:09:24 +0800</pubDate>
+      
+      <guid>http://powerleo101.github.io/2019/noip2008/</guid>
+      <description>笨小猴 暴力找出出现次数最大最小的两个字符
+再暴力判断是不是质数
+火柴棒等式 先想一下这个等式最大是多少
+每一位都是 1 肯定是最优的
+那么也就是 $(24 - 4) / (3 * 2)$
+大概是 1000
+那么我们把 1~1000 这些数字所需的火柴都算出来
+然后暴力匹配两两相加
+传纸条 首先我们可以吧问题转化成两个,都是 (1,1) 走向 (n, m)要求进过的路线不重复
+设 $dp[i][j][k][l]$ 表示第一个人在 (i, j), 第二个人在 (k, l) 的最大贡献
+转移就是从左边和上面的两个节点转移过来
+在转移的过程中需要保证每个节点只被算到一次
+双栈排序 可以发现一个若有一组位置 $i &amp;lt; j &amp;lt; k$, 使得 $p_k &amp;lt; p_i &amp;lt; p_j$,那么这组位置不能在一个栈里,需要用到第二个栈
+用这些关系构建一个二分图,$n ^ 2$匹配每个节点,这个时候可以把不合法的情况判掉,因为要求字典序最小,所以优先选第一个栈
+知道了每个节点在那个栈里,接下来就是贪心模拟
+尽量放,知道不合法再弹出即可</description>
+    </item>
+    
+  </channel>
+</rss>
