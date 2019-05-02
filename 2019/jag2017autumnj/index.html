@@ -9,9 +9,9 @@
   <meta name="description" content="Leo101&#39;s blog">
   
   
-  <link rel="prev" href="https://leo101.net/2019/noip2008/" />
-  <link rel="next" href="https://leo101.net/2019/codefestival2017qualad/" />
-  <link rel="canonical" href="https://leo101.net/2019/cf734f/" />
+  <link rel="prev" href="https://leo101.net/2019/codefestival2017qualad/" />
+  
+  <link rel="canonical" href="https://leo101.net/2019/jag2017autumnj/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Codeforces734F Anton and School | Leo101&#39;s blog
+           jag2017autumnJ Farm Village | Leo101&#39;s blog
        
   </title>
-  <meta name="title" content="Codeforces734F Anton and School | Leo101&#39;s blog">
+  <meta name="title" content="jag2017autumnJ Farm Village | Leo101&#39;s blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/leo101.net"
     },
     "articleSection" : "posts",
-    "name" : "Codeforces734F Anton and School",
-    "headline" : "Codeforces734F Anton and School",
-    "description" : "题面 Codeforces\nLuogu\n题解 总而言之这题是真的神仙\n首先看到这两个式子\nb[i]=(a[i] and a[1])\x2b(a[i] and a[2])\x2b...\x2b(a[i] and a[n]) c[i]=(a[i] or a[1])\x2b(a[i] or a[2])\x2b...\x2b(a[i] or a[n])  因为\n(a and b) \x2b (a or b) = a \x2b b\n所以\n$$b[i] \x2b c[i] = (\\sum_{j = 1}^{n}{a[j]})\x2bn*a[i]$$\n所以\n$$ \\sum_{i=1}^{n}=2*n*\\sum_{i=1}^{n}{a[i]} $$\n所以\n$$ \\frac{\\sum_{i = 1}^{n}{(b[i] \x2bc[i])}}{2*n}{=\\sum_{i = 1}^{n}{a[i]}} $$\n然后我们就可以得到所有 a[i] 的和了\n然后再根据\n$$ b[i] \x2b c[i] = (\\sum_{j = 1}^{n}{a[j]})\x2bn *a[i] $$\n得到每一个 $a[i]$ 的值",
+    "name" : "jag2017autumnJ Farm Village",
+    "headline" : "jag2017autumnJ Farm Village",
+    "description" : "题面 题目链接\n翻译 数轴上有 n 个村庄，每个村庄可以生产两个单位的粮食。在每个村庄生产一单位粮食有一定的代价。运输粮食的代价就是运输的距离。求最小代价使得每个村庄都有 一个单位的粮食。\n题解 虽然在叶老的课件里这题是贪心优化费用流，但是讲起来和写起来和费用流没有毛关系\n首先先把问题抽象一下，每个村庄可以有两个出口，需要一个入口，自给自足就可以看作是自己出口给自己，然后\n 根据一般套路准备两个堆，一个出口一个进口。 ————叶老\n 首先预处理一下，把 d 取前缀和，方便计算距离\n那么我们先贪心的想（也就是不计之后的代价），把这一次的出口与之前的入口需求相匹配，如果可以优化答案（也就是他们之间的距离 \x2b $G_i$比相匹配的节点自给自足更优），那么就直接使用\n然后就有反悔操作，就是更加后面的节点的出口，匹配前面我们匹配上的这个节点，所以每当我们根据贪心取完一次后（贪心每次是从入口堆里取最小值与当前的出口相匹配），就再往入口堆里面丢一个$-(当前给答案的贡献) - dist[i] \x2b g[i]$，方便之后反悔（说实话只有这里有点像网络流）\n然后还有一个反悔就是这一次的出口不给之前的，给之后的，那么就往出口堆里丢一个$-(给答案造成的贡献) - dist[i] \x2b g[i]$，以便之后反悔\n做完上述的发现自己的入口需求还没有解决，那么就从出口堆里取出一个最优的，与自己匹配\n然后再往入口堆里丢一个$-(对答案造成的贡献) - dist[j]$以便之后反悔（用后面的出口来满足自己的入口）\n代码 \/************************** * Author : Leo101 * Problem : Farm Village * Tags : 贪心 **************************\/ #include \x26lt;iostream\x26gt; #include \x26lt;cstdio\x26gt; #include \x26lt;algorithm\x26gt; #include \x26lt;cstring\x26gt; #include \x26lt;functional\x26gt; #define _FILE(s) freopen(#s\x26quot;.in\x26quot;, \x26quot;r\x26quot;, stdin); freopen(#s\x26quot;.out\x26quot;, \x26quot;w\x26quot;, stdout) #define gi get_int() typedef long long LL; #define int LL const int MAXN = 200010; int get_int() { int x = 0, y = 1; char ch = getchar(); while (!",
     "inLanguage" : "en-us",
     "author" : "Leo101",
     "creator" : "Leo101",
@@ -54,10 +54,10 @@
     "accountablePerson" : "Leo101",
     "copyrightHolder" : "Leo101",
     "copyrightYear" : "2019",
-    "datePublished": "2019-05-02 12:02:39 \x2b0800 CST",
-    "dateModified" : "2019-05-02 12:02:39 \x2b0800 CST",
-    "url" : "https:\/\/leo101.net\/2019\/cf734f\/",
-    "wordCount" : "445",
+    "datePublished": "2019-05-02 15:41:28 \x2b0800 CST",
+    "dateModified" : "2019-05-02 15:41:28 \x2b0800 CST",
+    "url" : "https:\/\/leo101.net\/2019\/jag2017autumnj\/",
+    "wordCount" : "304",
     "keywords" : [ "贪心","构造", "Leo101\x27s blog"]
 }
 </script>
@@ -125,7 +125,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Codeforces734F Anton and School</h1>
+        <h1 class="post-title" itemprop="name headline">jag2017autumnJ Farm Village</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://leo101.net" rel="author">Leo101</a> with ♥ 
                 <span class="post-time">
@@ -134,8 +134,8 @@
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
+                        <a href="https://leo101.net/categories/atcoder/"> Atcoder </a>
                         <a href="https://leo101.net/categories/cjk%E8%B4%AA%E5%BF%83%E4%B8%8E%E6%9E%84%E9%80%A0/"> cjk贪心与构造 </a>
-                        <a href="https://leo101.net/categories/codeforces/"> Codeforces </a>
                         
                 </span>
         </div>
@@ -160,72 +160,54 @@
 
 <h2 id="题面">题面</h2>
 
-<p><a href="http://codeforces.com/problemset/problem/734/F" rel="nofollow noreferrer" target="_blank">Codeforces</a></p>
+<p><a href="https://jag2017autumn.contest.atcoder.jp/tasks/jag2017autumn_j" rel="nofollow noreferrer" target="_blank">题目链接</a></p>
 
-<p><a href="[https://www.luogu.org/problemnew/show/CF734F](https://www.luogu.org/problemnew/show/CF734F)" rel="nofollow noreferrer" target="_blank">Luogu</a></p>
+<h2 id="翻译">翻译</h2>
+
+<p>数轴上有 n 个村庄，每个村庄可以生产两个单位的粮食。在每个村庄生产一单位粮食有一定的代价。运输粮食的代价就是运输的距离。求最小代价使得每个村庄都有 一个单位的粮食。</p>
+
+<hr />
 
 <h2 id="题解">题解</h2>
 
-<p>总而言之这题是真的神仙</p>
+<p>虽然在叶老的课件里这题是贪心优化费用流，但是讲起来和写起来和费用流没有毛关系</p>
 
-<p>首先看到这两个式子</p>
+<p>首先先把问题抽象一下，每个村庄可以有两个出口，需要一个入口，自给自足就可以看作是自己出口给自己，然后</p>
 
-<pre><code>b[i]=(a[i] and a[1])+(a[i] and a[2])+...+(a[i] and a[n])
-c[i]=(a[i] or a[1])+(a[i] or a[2])+...+(a[i] or a[n])
-</code></pre>
+<blockquote>
+<p>根据一般套路准备两个堆，一个出口一个进口。
+————叶老</p>
+</blockquote>
 
-<p>因为</p>
+<p>首先预处理一下，把 d 取前缀和，方便计算距离</p>
 
-<p><code>(a and b) + (a or b) = a + b</code></p>
+<p>那么我们先贪心的想（也就是不计之后的代价），把这一次的出口与之前的入口需求相匹配，如果可以优化答案（也就是他们之间的距离 + $G_i$比相匹配的节点自给自足更优），那么就直接使用</p>
 
-<p>所以</p>
+<p>然后就有反悔操作，就是更加后面的节点的出口，匹配前面我们匹配上的这个节点，所以每当我们根据贪心取完一次后（贪心每次是从入口堆里取最小值与当前的出口相匹配），就再往入口堆里面丢一个$-(当前给答案的贡献) - dist[i] + g[i]$，方便之后反悔（说实话只有这里有点像网络流）</p>
 
-<p>$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n*a[i]$$</p>
+<p>然后还有一个反悔就是这一次的出口不给之前的，给之后的，那么就往出口堆里丢一个$-(给答案造成的贡献) - dist[i] + g[i]$，以便之后反悔</p>
 
-<p>所以</p>
+<p>做完上述的发现自己的入口需求还没有解决，那么就从出口堆里取出一个最优的，与自己匹配</p>
 
-<p>$$ \sum_{i=1}^{n}=2*n*\sum_{i=1}^{n}{a[i]} $$</p>
-
-<p>所以</p>
-
-<p>$$ \frac{\sum_{i = 1}^{n}{(b[i] +c[i])}}{2*n}{=\sum_{i = 1}^{n}{a[i]}} $$</p>
-
-<p>然后我们就可以得到所有 a[i] 的和了</p>
-
-<p>然后再根据</p>
-
-<p>$$ b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i] $$</p>
-
-<p>得到每一个 $a[i]$ 的值</p>
-
-<p>接下来就是验证，常规的$O(n^2)$肯定不行，直接用位运算优化一下就可以了</p>
-
-<p>对于与操作</p>
-
-<p>a[i] 的某一位如果是 0 这一位得到的就都是 0 ，如果是 1 就得到所有这一位上的 1</p>
-
-<p>对于或操作</p>
-
-<p>a[i] 某一位如果是1这一位就有 n 个 1 ，是 0 就加上其他数的 1 ，实际上就是这一位上所以的 1</p>
-
-<hr />
+<p>然后再往入口堆里丢一个$-(对答案造成的贡献) - dist[j]$以便之后反悔（用后面的出口来满足自己的入口）</p>
 
 <h2 id="代码">代码</h2>
 
 <pre><code class="language-cpp">/**************************
   * Author : Leo101
-  * Problem : CF734F Anton and School
-  * Tags : 贪心, 构造
+  * Problem : Farm Village
+  * Tags : 贪心
 **************************/
 #include &lt;iostream&gt;
 #include &lt;cstdio&gt;
 #include &lt;algorithm&gt;
 #include &lt;cstring&gt;
+#include &lt;functional&gt;
 #define _FILE(s) freopen(#s&quot;.in&quot;, &quot;r&quot;, stdin); freopen(#s&quot;.out&quot;, &quot;w&quot;, stdout)
 #define gi get_int()
-typedef unsigned long long LL;
+typedef long long LL;
 #define int LL
-const int MAXN = 2e6;
+const int MAXN = 200010;
 int get_int()
 {
 	int x = 0, y = 1; char ch = getchar();
@@ -235,63 +217,46 @@ int get_int()
 	return x * y;
 }
 
-int numA[MAXN], numB[MAXN], numC[MAXN], count[64];
-
-bool check(int n)
+int heap1[MAXN], heap2[MAXN], dist[MAXN], cnt1, cnt2;
+int topHeap(int* heap, int &amp;cnt)
 {
-	// get sum
-	for (int i = 0; i &lt; n; i++)
-		for (int j = 0; j &lt; 64; j++) 
-			count[j] += (numA[i] &gt;&gt; j) &amp; 1;
-
-	// operation &amp;
-	for (int i = 0; i &lt; n; i++) {
-		int temp = 0;
-		for (int j = 0; j &lt; 64; j++) {
-			if (((numA[i] &gt;&gt; j) &amp; 1) == 0) continue;
-			temp += count[j] &lt;&lt; j;
-		}
-		if (temp != numB[i]) return false;
-	}
-
-	// operation |
-	for (int i = 0; i &lt; n; i++) {
-		int temp = 0;
-		for (int j = 0; j &lt; 64; j++) {
-			if (((numA[i] &gt;&gt; j) &amp; 1) == 1) {
-				temp += n &lt;&lt; j;
-			} else {
-				temp += count[j] &lt;&lt; j;
-			}
-		}
-		if (temp != numC[i]) return false;
-	}
-
-	return true;
+	return heap[0];
+}
+int deleteHeap(int* heap, int &amp;cnt)
+{
+	std :: pop_heap(heap, heap + cnt, std :: greater&lt;int&gt;());
+	return heap[--cnt];
+}
+void insertHeap(int* heap, int val, int &amp;cnt)
+{
+	heap[cnt++] = val;
+	std :: push_heap(heap, heap + cnt, std :: greater&lt;int&gt;());
 }
 
 signed main()
 {
 	_FILE(code);
 
-	int n = gi;
-	for (int i = 0; i &lt; n; i++) numB[i] = gi;
-	for (int i = 0; i &lt; n; i++) numC[i] = gi;
-
-	int sum = 0;
-	for (int i = 0; i &lt; n; i++) 
-		sum += numB[i] + numC[i];
-	sum /= 2 * n;
-
-	for (int i = 0; i &lt; n; i++) 
-		numA[i] = ((numB[i] + numC[i]) - sum) / n;
-
-	if (check(n) == false) {
-		printf(&quot;-1&quot;);
-		return 0;
+	int n = gi, ans = 0;
+	for (int i = 1; i &lt; n; i++) dist[i] = gi + dist[i - 1];
+	for (int i = 0; i &lt; n; i++) {
+		int cost = gi;
+		for (int j = 0; j &lt; 2; j++) {
+			int tmp = topHeap(heap1, cnt1) + dist[i] + cost;
+			if (cnt1 != 0 &amp;&amp; tmp &lt; 0) {
+				deleteHeap(heap1, cnt1); ans += tmp;
+				insertHeap(heap1, -dist[i] - cost, cnt1);
+				insertHeap(heap2, -dist[i] + cost - tmp, cnt2);
+			} else {
+				insertHeap(heap2, -dist[i] + cost, cnt2);
+			}
+		}
+		int tmp = deleteHeap(heap2, cnt2) + dist[i];
+		ans += tmp;
+		insertHeap(heap1, -tmp - dist[i], cnt1);
 	}
 
-	for (int i = 0; i &lt; n; i++) std :: cout &lt;&lt; numA[i] &lt;&lt; &quot; &quot;;
+	printf(&quot;%lld\n&quot;, ans);
 
 	return 0;
 }
@@ -310,7 +275,7 @@ signed main()
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://leo101.net/2019/cf734f/>https://leo101.net/2019/cf734f/</span>
+                    <a href=https://leo101.net/2019/jag2017autumnj/>https://leo101.net/2019/jag2017autumnj/</span>
             </p>
             
              
@@ -342,10 +307,8 @@ signed main()
 
     <div class="post-nav">
         
-        <a href="https://leo101.net/2019/noip2008/" class="prev" rel="prev" title="NOIP2008"><i class="iconfont icon-left"></i>&nbsp;NOIP2008</a>
+        <a href="https://leo101.net/2019/codefestival2017qualad/" class="prev" rel="prev" title="Atcoder CodeFestival2017QualaD Four Coloring"><i class="iconfont icon-left"></i>&nbsp;Atcoder CodeFestival2017QualaD Four Coloring</a>
          
-        
-        <a href="https://leo101.net/2019/codefestival2017qualad/" class="next" rel="next" title="Atcoder CodeFestival2017QualaD Four Coloring">Atcoder CodeFestival2017QualaD Four Coloring&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

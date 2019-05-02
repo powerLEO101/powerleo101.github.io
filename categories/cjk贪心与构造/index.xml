@@ -6,10 +6,43 @@
     <description>Recent content in cjk贪心与构造 on Leo101&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 May 2019 12:02:39 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 May 2019 15:41:28 +0800</lastBuildDate>
     
 	<atom:link href="https://leo101.net/categories/cjk%E8%B4%AA%E5%BF%83%E4%B8%8E%E6%9E%84%E9%80%A0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>jag2017autumnJ Farm Village</title>
+      <link>https://leo101.net/2019/jag2017autumnj/</link>
+      <pubDate>Thu, 02 May 2019 15:41:28 +0800</pubDate>
+      
+      <guid>https://leo101.net/2019/jag2017autumnj/</guid>
+      <description>题面 题目链接
+翻译 数轴上有 n 个村庄，每个村庄可以生产两个单位的粮食。在每个村庄生产一单位粮食有一定的代价。运输粮食的代价就是运输的距离。求最小代价使得每个村庄都有 一个单位的粮食。
+题解 虽然在叶老的课件里这题是贪心优化费用流，但是讲起来和写起来和费用流没有毛关系
+首先先把问题抽象一下，每个村庄可以有两个出口，需要一个入口，自给自足就可以看作是自己出口给自己，然后
+ 根据一般套路准备两个堆，一个出口一个进口。 ————叶老
+ 首先预处理一下，把 d 取前缀和，方便计算距离
+那么我们先贪心的想（也就是不计之后的代价），把这一次的出口与之前的入口需求相匹配，如果可以优化答案（也就是他们之间的距离 + $G_i$比相匹配的节点自给自足更优），那么就直接使用
+然后就有反悔操作，就是更加后面的节点的出口，匹配前面我们匹配上的这个节点，所以每当我们根据贪心取完一次后（贪心每次是从入口堆里取最小值与当前的出口相匹配），就再往入口堆里面丢一个$-(当前给答案的贡献) - dist[i] + g[i]$，方便之后反悔（说实话只有这里有点像网络流）
+然后还有一个反悔就是这一次的出口不给之前的，给之后的，那么就往出口堆里丢一个$-(给答案造成的贡献) - dist[i] + g[i]$，以便之后反悔
+做完上述的发现自己的入口需求还没有解决，那么就从出口堆里取出一个最优的，与自己匹配
+然后再往入口堆里丢一个$-(对答案造成的贡献) - dist[j]$以便之后反悔（用后面的出口来满足自己的入口）
+代码 /************************** * Author : Leo101 * Problem : Farm Village * Tags : 贪心 **************************/ #include &amp;lt;iostream&amp;gt; #include &amp;lt;cstdio&amp;gt; #include &amp;lt;algorithm&amp;gt; #include &amp;lt;cstring&amp;gt; #include &amp;lt;functional&amp;gt; #define _FILE(s) freopen(#s&amp;quot;.in&amp;quot;, &amp;quot;r&amp;quot;, stdin); freopen(#s&amp;quot;.out&amp;quot;, &amp;quot;w&amp;quot;, stdout) #define gi get_int() typedef long long LL; #define int LL const int MAXN = 200010; int get_int() { int x = 0, y = 1; char ch = getchar(); while (!</description>
+    </item>
+    
+    <item>
+      <title>Atcoder CodeFestival2017QualaD Four Coloring</title>
+      <link>https://leo101.net/2019/codefestival2017qualad/</link>
+      <pubDate>Thu, 02 May 2019 15:37:57 +0800</pubDate>
+      
+      <guid>https://leo101.net/2019/codefestival2017qualad/</guid>
+      <description>题面 题目链接
+翻译 有四种颜色， 你需一个 n*m 的棋盘染色，是的没有任何一对曼哈顿距离为 d 的点的颜色相同
+题解 首先你可以发现，整个图可以分成类似下图这样是一定可以的
+121212.... 343434.... 121212....  注意，每个数字代表的是一个块，块里的颜色都是一样的，块的长宽为 k，这样块内的都无法互相联系到
+代码 /************************** * Author : Leo101 * Problem : Four Coloring * Tags : 贪心，找规律 **************************/ #include &amp;lt;iostream&amp;gt; #include &amp;lt;cstdio&amp;gt; #include &amp;lt;algorithm&amp;gt; #include &amp;lt;cstring&amp;gt; #define _FILE(s) freopen(#s&amp;quot;.in&amp;quot;, &amp;quot;r&amp;quot;, stdin); freopen(#s&amp;quot;.out&amp;quot;, &amp;quot;w&amp;quot;, stdout) #define gi get_int() int get_int() { int x = 0, y = 1; char ch = getchar(); while (!isdigit(ch) &amp;amp;&amp;amp; ch !</description>
+    </item>
     
     <item>
       <title>Codeforces734F Anton and School</title>

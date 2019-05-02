@@ -6,10 +6,28 @@
     <description>Recent content in Categories on Leo101&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 May 2019 12:02:39 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 May 2019 15:41:28 +0800</lastBuildDate>
     
 	<atom:link href="https://leo101.net/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atcoder</title>
+      <link>https://leo101.net/categories/atcoder/</link>
+      <pubDate>Thu, 02 May 2019 15:41:28 +0800</pubDate>
+      
+      <guid>https://leo101.net/categories/atcoder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cjk贪心与构造</title>
+      <link>https://leo101.net/categories/cjk%E8%B4%AA%E5%BF%83%E4%B8%8E%E6%9E%84%E9%80%A0/</link>
+      <pubDate>Thu, 02 May 2019 15:41:28 +0800</pubDate>
+      
+      <guid>https://leo101.net/categories/cjk%E8%B4%AA%E5%BF%83%E4%B8%8E%E6%9E%84%E9%80%A0/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Codeforces</title>
@@ -17,15 +35,6 @@
       <pubDate>Thu, 02 May 2019 12:02:39 +0800</pubDate>
       
       <guid>https://leo101.net/categories/codeforces/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cjk贪心与构造</title>
-      <link>https://leo101.net/categories/cjk%E8%B4%AA%E5%BF%83%E4%B8%8E%E6%9E%84%E9%80%A0/</link>
-      <pubDate>Thu, 02 May 2019 12:02:39 +0800</pubDate>
-      
-      <guid>https://leo101.net/categories/cjk%E8%B4%AA%E5%BF%83%E4%B8%8E%E6%9E%84%E9%80%A0/</guid>
       <description></description>
     </item>
     

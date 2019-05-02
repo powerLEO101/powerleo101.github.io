@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>贪心 on Leo101&#39;s blog</title>
-    <link>https://leo101.net/tags/%E8%B4%AA%E5%BF%83/</link>
-    <description>Recent content in 贪心 on Leo101&#39;s blog</description>
+    <title>Atcoder on Leo101&#39;s blog</title>
+    <link>https://leo101.net/categories/atcoder/</link>
+    <description>Recent content in Atcoder on Leo101&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 May 2019 15:41:28 +0800</lastBuildDate>
     
-	<atom:link href="https://leo101.net/tags/%E8%B4%AA%E5%BF%83/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leo101.net/categories/atcoder/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -42,30 +42,6 @@
 题解 首先你可以发现，整个图可以分成类似下图这样是一定可以的
 121212.... 343434.... 121212....  注意，每个数字代表的是一个块，块里的颜色都是一样的，块的长宽为 k，这样块内的都无法互相联系到
 代码 /************************** * Author : Leo101 * Problem : Four Coloring * Tags : 贪心，找规律 **************************/ #include &amp;lt;iostream&amp;gt; #include &amp;lt;cstdio&amp;gt; #include &amp;lt;algorithm&amp;gt; #include &amp;lt;cstring&amp;gt; #define _FILE(s) freopen(#s&amp;quot;.in&amp;quot;, &amp;quot;r&amp;quot;, stdin); freopen(#s&amp;quot;.out&amp;quot;, &amp;quot;w&amp;quot;, stdout) #define gi get_int() int get_int() { int x = 0, y = 1; char ch = getchar(); while (!isdigit(ch) &amp;amp;&amp;amp; ch !</description>
-    </item>
-    
-    <item>
-      <title>Codeforces734F Anton and School</title>
-      <link>https://leo101.net/2019/cf734f/</link>
-      <pubDate>Thu, 02 May 2019 12:02:39 +0800</pubDate>
-      
-      <guid>https://leo101.net/2019/cf734f/</guid>
-      <description>题面 Codeforces
-Luogu
-题解 总而言之这题是真的神仙
-首先看到这两个式子
-b[i]=(a[i] and a[1])+(a[i] and a[2])+...+(a[i] and a[n]) c[i]=(a[i] or a[1])+(a[i] or a[2])+...+(a[i] or a[n])  因为
-(a and b) + (a or b) = a + b
-所以
-$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n*a[i]$$
-所以
-$$ \sum_{i=1}^{n}=2*n*\sum_{i=1}^{n}{a[i]} $$
-所以
-$$ \frac{\sum_{i = 1}^{n}{(b[i] +c[i])}}{2*n}{=\sum_{i = 1}^{n}{a[i]}} $$
-然后我们就可以得到所有 a[i] 的和了
-然后再根据
-$$ b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i] $$
-得到每一个 $a[i]$ 的值</description>
     </item>
     
   </channel>

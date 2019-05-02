@@ -9,9 +9,9 @@
   <meta name="description" content="Leo101&#39;s blog">
   
   
-  <link rel="prev" href="https://leo101.net/2019/hello-world/" />
-  <link rel="next" href="https://leo101.net/2019/noip2008/" />
-  <link rel="canonical" href="https://leo101.net/2019/hugo-summary/" />
+  <link rel="prev" href="https://leo101.net/2019/cf734f/" />
+  <link rel="next" href="https://leo101.net/2019/jag2017autumnj/" />
+  <link rel="canonical" href="https://leo101.net/2019/codefestival2017qualad/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           hugo搭建博客使用总结 | Leo101&#39;s blog
+           Atcoder CodeFestival2017QualaD Four Coloring | Leo101&#39;s blog
        
   </title>
-  <meta name="title" content="hugo搭建博客使用总结 | Leo101&#39;s blog">
+  <meta name="title" content="Atcoder CodeFestival2017QualaD Four Coloring | Leo101&#39;s blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/leo101.net"
     },
     "articleSection" : "posts",
-    "name" : "hugo搭建博客使用总结",
-    "headline" : "hugo搭建博客使用总结",
-    "description" : "在使用本文章之前，你需要有一定的 git 基础\n安装 hugo 的特点是完全没有依赖，所以安装特别简单\nsudo apt install hugo  使用 新建网站 通过hugo new site ***来新建一个网站\nhugo 会在你的当前目录新建一个文件夹，表示网站\n选择主题 hugo 默认没有主题所以要自己下\n之前 worddpress，typecho 那些花里胡哨的主题看多了觉得没意思，主要是麻烦，再就是没钱\n不得不说 hexo 的博文数量和社区活跃度还是远超 hugo，但是因为 hugo 优秀的依赖关系（没有），我还是用了 hugo\n你用了 hexo 就会发现 npm 跟 shi 一样\n这里选择了 leaveit，比较简单，但也好看，也方便日后 diy\nhttps:\/\/themes.gohugo.io\/leaveit\/\n将主题 clone 到 theme 文件夹，然后在 config.toml 追加\ntheme = \x26quot;LeaveIt\x26quot;  主题配置 把主题文件夹里的 exampleSite 里的 config 蒯过来就差不多了\n根据代码你会发现会有一个 About 是 404，只需要创建 about.md 这篇文章就会自动读取\n其他的就是一点小修改，不列举了\n写文章 使用命令",
+    "name" : "Atcoder CodeFestival2017QualaD Four Coloring",
+    "headline" : "Atcoder CodeFestival2017QualaD Four Coloring",
+    "description" : "题面 题目链接\n翻译 有四种颜色， 你需一个 n*m 的棋盘染色，是的没有任何一对曼哈顿距离为 d 的点的颜色相同\n题解 首先你可以发现，整个图可以分成类似下图这样是一定可以的\n121212.... 343434.... 121212....  注意，每个数字代表的是一个块，块里的颜色都是一样的，块的长宽为 k，这样块内的都无法互相联系到\n代码 \/************************** * Author : Leo101 * Problem : Four Coloring * Tags : 贪心，找规律 **************************\/ #include \x26lt;iostream\x26gt; #include \x26lt;cstdio\x26gt; #include \x26lt;algorithm\x26gt; #include \x26lt;cstring\x26gt; #define _FILE(s) freopen(#s\x26quot;.in\x26quot;, \x26quot;r\x26quot;, stdin); freopen(#s\x26quot;.out\x26quot;, \x26quot;w\x26quot;, stdout) #define gi get_int() int get_int() { int x = 0, y = 1; char ch = getchar(); while (!isdigit(ch) \x26amp;\x26amp; ch !",
     "inLanguage" : "en-us",
     "author" : "Leo101",
     "creator" : "Leo101",
@@ -54,11 +54,11 @@
     "accountablePerson" : "Leo101",
     "copyrightHolder" : "Leo101",
     "copyrightYear" : "2019",
-    "datePublished": "2019-04-13 17:29:18 \x2b0800 CST",
-    "dateModified" : "2019-04-13 17:29:18 \x2b0800 CST",
-    "url" : "https:\/\/leo101.net\/2019\/hugo-summary\/",
-    "wordCount" : "115",
-    "keywords" : [ "总结", "Leo101\x27s blog"]
+    "datePublished": "2019-05-02 15:37:57 \x2b0800 CST",
+    "dateModified" : "2019-05-02 15:37:57 \x2b0800 CST",
+    "url" : "https:\/\/leo101.net\/2019\/codefestival2017qualad\/",
+    "wordCount" : "179",
+    "keywords" : [ "贪心","构造", "Leo101\x27s blog"]
 }
 </script>
 
@@ -125,16 +125,17 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">hugo搭建博客使用总结</h1>
+        <h1 class="post-title" itemprop="name headline">Atcoder CodeFestival2017QualaD Four Coloring</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://leo101.net" rel="author">Leo101</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2019-04-13 itemprop="datePublished">April 13, 2019</time>
+                on <time datetime=2019-05-02 itemprop="datePublished">May 2, 2019</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://leo101.net/categories/%E5%90%84%E7%A7%8D%E6%80%BB%E7%BB%93/"> 各种总结 </a>
+                        <a href="https://leo101.net/categories/atcoder/"> Atcoder </a>
+                        <a href="https://leo101.net/categories/cjk%E8%B4%AA%E5%BF%83%E4%B8%8E%E6%9E%84%E9%80%A0/"> cjk贪心与构造 </a>
                         
                 </span>
         </div>
@@ -157,91 +158,68 @@
 
           
 
-<p>在使用本文章之前，你需要有一定的 git 基础</p>
+<h2 id="题面">题面</h2>
+
+<p><a href="https://code-festival-2017-quala.contest.atcoder.jp/tasks/code_festival_2017_quala_d" rel="nofollow noreferrer" target="_blank">题目链接</a></p>
+
+<h2 id="翻译">翻译</h2>
+
+<p>有四种颜色， 你需一个 n*m 的棋盘染色，是的没有任何一对曼哈顿距离为 d 的点的颜色相同</p>
+
+<h2 id="题解">题解</h2>
+
+<p>首先你可以发现，整个图可以分成类似下图这样是一定可以的</p>
+
+<pre><code class="language-text">121212....
+343434....
+121212....
+</code></pre>
+
+<p>注意，每个数字代表的是一个块，块里的颜色都是一样的，块的长宽为 k，这样块内的都无法互相联系到</p>
 
 <hr />
 
-<h2 id="安装">安装</h2>
+<h2 id="代码">代码</h2>
 
-<p>hugo 的特点是完全没有依赖，所以安装特别简单</p>
+<pre><code class="language-cpp">/**************************
+  * Author : Leo101
+  * Problem : Four Coloring
+  * Tags : 贪心，找规律
+**************************/
+#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+#include &lt;algorithm&gt;
+#include &lt;cstring&gt;
+#define _FILE(s) freopen(#s&quot;.in&quot;, &quot;r&quot;, stdin); freopen(#s&quot;.out&quot;, &quot;w&quot;, stdout)
+#define gi get_int()
+int get_int()
+{
+	int x = 0, y = 1; char ch = getchar();
+	while (!isdigit(ch) &amp;&amp; ch != '-') ch = getchar();
+	if (ch == '-') y = -1, ch = getchar();
+	while (isdigit(ch)) x = x * 10 + ch - '0', ch = getchar();
+	return x * y;
+}
 
-<pre><code class="language-sh">sudo apt install hugo
+char ch[4] = {'R', 'G', 'B', 'Y'};
+
+int main()
+{
+	_FILE(code);
+
+	int n = gi, m = gi, k = gi;
+
+	for (int i = 0; i &lt; n; i++) {
+		for (int j = 0; j &lt; m; j++) {
+			int x = (i + j + m) / k % 2, y = (i - j + m) / k % 2;
+			printf(&quot;%c&quot;, ch[x * 2 + y]);
+		}
+		printf(&quot;\n&quot;);
+	}
+
+	return 0;
+}
 </code></pre>
-
-<h2 id="使用">使用</h2>
-
-<h3 id="新建网站">新建网站</h3>
-
-<p>通过<code>hugo new site ***</code>来新建一个网站</p>
-
-<p>hugo 会在你的当前目录新建一个文件夹，表示网站</p>
-
-<h3 id="选择主题">选择主题</h3>
-
-<p>hugo 默认没有主题所以要自己下</p>
-
-<p>之前 worddpress，typecho 那些花里胡哨的主题看多了觉得没意思，主要是麻烦<del>，再就是没钱</del></p>
-
-<p>不得不说 hexo 的博文数量和社区活跃度还是远超 hugo，但是因为 hugo 优秀的依赖关系（没有），我还是用了 hugo</p>
-
-<p><del>你用了 hexo 就会发现 npm 跟 shi 一样</del></p>
-
-<p>这里选择了 leaveit，比较简单，但也好看，也方便日后 diy</p>
-
-<p><a href="https://themes.gohugo.io/leaveit/" rel="nofollow noreferrer" target="_blank">https://themes.gohugo.io/leaveit/</a></p>
-
-<p>将主题 clone 到 theme 文件夹，然后在 config.toml 追加</p>
-
-<pre><code>theme = &quot;LeaveIt&quot;
-</code></pre>
-
-<h3 id="主题配置">主题配置</h3>
-
-<p>把主题文件夹里的 exampleSite 里的 config 蒯过来就差不多了</p>
-
-<p>根据代码你会发现会有一个 About 是 404，只需要创建 about.md 这篇文章就会自动读取</p>
-
-<p>其他的就是一点小修改，不列举了</p>
-
-<h3 id="写文章">写文章</h3>
-
-<p>使用命令</p>
-
-<pre><code>hugo new ***
-</code></pre>
-
-<p>文章文件会生成在 content 里，直接写就可以了</p>
-
-<p>然后根据 LeaveIt 的逻辑，blog 需要存在 posts 里</p>
-
-<p>所以在 LeaveIt 下新建 blog 的文章的命令是：</p>
-
-<pre><code>hugo new posts/***
-</code></pre>
-
-<p>当然你也可以通过修改 config.toml 来更改 blog 的储存目录</p>
-
-<p>其中同步配置文件里的 draft 如果为 false 才会生成到网站里</p>
-
-<p>注：about.md 不需要存在 posts 里</p>
-
-<h3 id="在线预览">在线预览</h3>
-
-<pre><code>hugo server -D
-</code></pre>
-
-<p>在<code>http://localhost:1313</code>访问网站</p>
-
-<h3 id="生成静态网页">生成静态网页</h3>
-
-<p>直接使用命令</p>
-
-<pre><code>hugo
-</code></pre>
-
-<p>即可</p>
-
-<p>网页会生成到 public 文件夹里，直接将这个文件夹部署到 github 上即可</p>
 
     </div>
 
@@ -256,7 +234,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://leo101.net/2019/hugo-summary/>https://leo101.net/2019/hugo-summary/</span>
+                    <a href=https://leo101.net/2019/codefestival2017qualad/>https://leo101.net/2019/codefestival2017qualad/</span>
             </p>
             
              
@@ -272,8 +250,11 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://leo101.net/tags/%E6%80%BB%E7%BB%93/">
-                    #总结</a></span>
+            <span class="tag"><a href="https://leo101.net/tags/%E8%B4%AA%E5%BF%83/">
+                    #贪心</a></span>
+            
+            <span class="tag"><a href="https://leo101.net/tags/%E6%9E%84%E9%80%A0/">
+                    #构造</a></span>
             
             </section>
         
@@ -285,10 +266,10 @@
 
     <div class="post-nav">
         
-        <a href="https://leo101.net/2019/hello-world/" class="prev" rel="prev" title="Hello World"><i class="iconfont icon-left"></i>&nbsp;Hello World</a>
+        <a href="https://leo101.net/2019/cf734f/" class="prev" rel="prev" title="Codeforces734F Anton and School"><i class="iconfont icon-left"></i>&nbsp;Codeforces734F Anton and School</a>
          
         
-        <a href="https://leo101.net/2019/noip2008/" class="next" rel="next" title="NOIP2008">NOIP2008&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://leo101.net/2019/jag2017autumnj/" class="next" rel="next" title="jag2017autumnJ Farm Village">jag2017autumnJ Farm Village&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -301,25 +282,6 @@
           </div>
 		   </main>
       
-
-<div style="width: 800px; max-width: 100%; overflow:hidden; margin: 0 auto" id="lv-container" data-id="city" data-uid="MTAyMC80MzgyNC8yMDM1OQ==">
-	<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-
-       if (typeof LivereTower === 'function') { return; }
-
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-	</script>
-<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
-</div>
-
-
 <footer class="footer">
     <div class="copyright">
         &copy;
