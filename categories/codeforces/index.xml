@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>CF734F</title>
+      <title>Codeforces734F Anton and School</title>
       <link>https://leo101.net/2019/cf734f/</link>
       <pubDate>Thu, 02 May 2019 12:02:39 +0800</pubDate>
       
@@ -22,16 +22,17 @@ Luogu
 题解 总而言之这题是真的神仙
 首先看到这两个式子
 b[i]=(a[i] and a[1])+(a[i] and a[2])+...+(a[i] and a[n]) c[i]=(a[i] or a[1])+(a[i] or a[2])+...+(a[i] or a[n])  因为
-$$(a &amp;amp; b) + (a | b) = a + b$$
+(a and b) + (a or b) = a + b
 所以
-$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i]$$
+$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n*a[i]$$
 所以
-$$\sum{i = 1}^{n} = 2 * n * \sum{i = 1}^{n}{a[i]}$$
+$$ \sum_{i=1}^{n}=2*n*\sum_{i=1}^{n}{a[i]} $$
 所以
-$$\frac{\sum{i = 1}^{n}{(b[i] +c[i])}}{2*n} {=\sum{i = 1}^{n}{a[i]}}$$
+$$ \frac{\sum_{i = 1}^{n}{(b[i] +c[i])}}{2*n}{=\sum_{i = 1}^{n}{a[i]}} $$
 然后我们就可以得到所有 a[i] 的和了
 然后再根据
-$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i]$$</description>
+$$ b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i] $$
+得到每一个 $a[i]$ 的值</description>
     </item>
     
   </channel>

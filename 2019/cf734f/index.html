@@ -22,10 +22,10 @@
   <title>
        
        
-           CF734F | Leo101&#39;s blog
+           Codeforces734F Anton and School | Leo101&#39;s blog
        
   </title>
-  <meta name="title" content="CF734F | Leo101&#39;s blog">
+  <meta name="title" content="Codeforces734F Anton and School | Leo101&#39;s blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/leo101.net"
     },
     "articleSection" : "posts",
-    "name" : "CF734F",
-    "headline" : "CF734F",
-    "description" : "题面 Codeforces\nLuogu\n题解 总而言之这题是真的神仙\n首先看到这两个式子\nb[i]=(a[i] and a[1])\x2b(a[i] and a[2])\x2b...\x2b(a[i] and a[n]) c[i]=(a[i] or a[1])\x2b(a[i] or a[2])\x2b...\x2b(a[i] or a[n])  因为\n$$(a \x26amp; b) \x2b (a | b) = a \x2b b$$\n所以\n$$b[i] \x2b c[i] = (\\sum_{j = 1}^{n}{a[j]})\x2bn *a[i]$$\n所以\n$$\\sum{i = 1}^{n} = 2 * n * \\sum{i = 1}^{n}{a[i]}$$\n所以\n$$\\frac{\\sum{i = 1}^{n}{(b[i] \x2bc[i])}}{2*n} {=\\sum{i = 1}^{n}{a[i]}}$$\n然后我们就可以得到所有 a[i] 的和了\n然后再根据\n$$b[i] \x2b c[i] = (\\sum_{j = 1}^{n}{a[j]})\x2bn *a[i]$$",
+    "name" : "Codeforces734F Anton and School",
+    "headline" : "Codeforces734F Anton and School",
+    "description" : "题面 Codeforces\nLuogu\n题解 总而言之这题是真的神仙\n首先看到这两个式子\nb[i]=(a[i] and a[1])\x2b(a[i] and a[2])\x2b...\x2b(a[i] and a[n]) c[i]=(a[i] or a[1])\x2b(a[i] or a[2])\x2b...\x2b(a[i] or a[n])  因为\n(a and b) \x2b (a or b) = a \x2b b\n所以\n$$b[i] \x2b c[i] = (\\sum_{j = 1}^{n}{a[j]})\x2bn*a[i]$$\n所以\n$$ \\sum_{i=1}^{n}=2*n*\\sum_{i=1}^{n}{a[i]} $$\n所以\n$$ \\frac{\\sum_{i = 1}^{n}{(b[i] \x2bc[i])}}{2*n}{=\\sum_{i = 1}^{n}{a[i]}} $$\n然后我们就可以得到所有 a[i] 的和了\n然后再根据\n$$ b[i] \x2b c[i] = (\\sum_{j = 1}^{n}{a[j]})\x2bn *a[i] $$\n得到每一个 $a[i]$ 的值",
     "inLanguage" : "en-us",
     "author" : "Leo101",
     "creator" : "Leo101",
@@ -57,7 +57,7 @@
     "datePublished": "2019-05-02 12:02:39 \x2b0800 CST",
     "dateModified" : "2019-05-02 12:02:39 \x2b0800 CST",
     "url" : "https:\/\/leo101.net\/2019\/cf734f\/",
-    "wordCount" : "451",
+    "wordCount" : "445",
     "keywords" : [ "贪心","构造", "Leo101\x27s blog"]
 }
 </script>
@@ -125,7 +125,7 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">CF734F</h1>
+        <h1 class="post-title" itemprop="name headline">Codeforces734F Anton and School</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://leo101.net" rel="author">Leo101</a> with ♥ 
                 <span class="post-time">
@@ -176,25 +176,25 @@ c[i]=(a[i] or a[1])+(a[i] or a[2])+...+(a[i] or a[n])
 
 <p>因为</p>
 
-<p>$$(a &amp; b) + (a | b) = a + b$$</p>
+<p><code>(a and b) + (a or b) = a + b</code></p>
 
 <p>所以</p>
 
-<p>$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i]$$</p>
+<p>$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n*a[i]$$</p>
 
 <p>所以</p>
 
-<p>$$\sum<em>{i = 1}^{n} = 2 * n * \sum</em>{i = 1}^{n}{a[i]}$$</p>
+<p>$$ \sum_{i=1}^{n}=2*n*\sum_{i=1}^{n}{a[i]} $$</p>
 
 <p>所以</p>
 
-<p>$$\frac{\sum<em>{i = 1}^{n}{(b[i] +c[i])}}{2*n} {=\sum</em>{i = 1}^{n}{a[i]}}$$</p>
+<p>$$ \frac{\sum_{i = 1}^{n}{(b[i] +c[i])}}{2*n}{=\sum_{i = 1}^{n}{a[i]}} $$</p>
 
 <p>然后我们就可以得到所有 a[i] 的和了</p>
 
 <p>然后再根据</p>
 
-<p>$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i]$$</p>
+<p>$$ b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i] $$</p>
 
 <p>得到每一个 $a[i]$ 的值</p>
 

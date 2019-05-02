@@ -2,16 +2,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>https://leo101.net/2019/cf734f/</loc>
-      
-      <lastmod>2019-05-02T12:02:39+08:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://leo101.net/categories/</loc>
       
       <lastmod>2019-05-02T12:02:39+08:00</lastmod>
@@ -31,6 +21,16 @@
       
       
       <priority>0</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://leo101.net/2019/cf734f/</loc>
+      
+      <lastmod>2019-05-02T12:02:39+08:00</lastmod>
+      
+      
       
       
     </url>
