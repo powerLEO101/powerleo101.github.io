@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>各种总结 on Leo101&#39;s blog</title>
-    <link>http://powerleo101.github.io/categories/%E5%90%84%E7%A7%8D%E6%80%BB%E7%BB%93/</link>
+    <link>https://leo101.net/categories/%E5%90%84%E7%A7%8D%E6%80%BB%E7%BB%93/</link>
     <description>Recent content in 各种总结 on Leo101&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 13 Apr 2019 17:29:18 +0800</lastBuildDate>
     
-	<atom:link href="http://powerleo101.github.io/categories/%E5%90%84%E7%A7%8D%E6%80%BB%E7%BB%93/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leo101.net/categories/%E5%90%84%E7%A7%8D%E6%80%BB%E7%BB%93/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>hugo搭建博客使用总结</title>
-      <link>http://powerleo101.github.io/2019/hugo-summary/</link>
+      <link>https://leo101.net/2019/hugo-summary/</link>
       <pubDate>Sat, 13 Apr 2019 17:29:18 +0800</pubDate>
       
-      <guid>http://powerleo101.github.io/2019/hugo-summary/</guid>
+      <guid>https://leo101.net/2019/hugo-summary/</guid>
       <description>在使用本文章之前，你需要有一定的 git 基础
 安装 hugo 的特点是完全没有依赖，所以安装特别简单
 sudo apt install hugo  使用 新建网站 通过hugo new site ***来新建一个网站

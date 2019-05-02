@@ -63,4 +63,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: http://powerleo101.github.io/sitemap.xml
+Sitemap: https://leo101.net/sitemap.xml

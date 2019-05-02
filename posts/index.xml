@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Leo101&#39;s blog</title>
-    <link>http://powerleo101.github.io/posts/</link>
+    <link>https://leo101.net/posts/</link>
     <description>Recent content in Posts on Leo101&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Apr 2019 19:09:24 +0800</lastBuildDate>
     
-	<atom:link href="http://powerleo101.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leo101.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>NOIP2008</title>
-      <link>http://powerleo101.github.io/2019/noip2008/</link>
+      <link>https://leo101.net/2019/noip2008/</link>
       <pubDate>Wed, 17 Apr 2019 19:09:24 +0800</pubDate>
       
-      <guid>http://powerleo101.github.io/2019/noip2008/</guid>
+      <guid>https://leo101.net/2019/noip2008/</guid>
       <description>笨小猴 暴力找出出现次数最大最小的两个字符
 再暴力判断是不是质数
 火柴棒等式 先想一下这个等式最大是多少
@@ -37,10 +37,10 @@
     
     <item>
       <title>hugo搭建博客使用总结</title>
-      <link>http://powerleo101.github.io/2019/hugo-summary/</link>
+      <link>https://leo101.net/2019/hugo-summary/</link>
       <pubDate>Sat, 13 Apr 2019 17:29:18 +0800</pubDate>
       
-      <guid>http://powerleo101.github.io/2019/hugo-summary/</guid>
+      <guid>https://leo101.net/2019/hugo-summary/</guid>
       <description>在使用本文章之前，你需要有一定的 git 基础
 安装 hugo 的特点是完全没有依赖，所以安装特别简单
 sudo apt install hugo  使用 新建网站 通过hugo new site ***来新建一个网站
@@ -60,10 +60,10 @@ theme = &amp;quot;LeaveIt&amp;quot;  主题配置 把主题文件夹里的 examp
     
     <item>
       <title>Hello World</title>
-      <link>http://powerleo101.github.io/2019/hello-world/</link>
+      <link>https://leo101.net/2019/hello-world/</link>
       <pubDate>Sat, 13 Apr 2019 16:48:24 +0800</pubDate>
       
-      <guid>http://powerleo101.github.io/2019/hello-world/</guid>
+      <guid>https://leo101.net/2019/hello-world/</guid>
       <description>本站点的第一篇博文
 以下为测试
 $233$

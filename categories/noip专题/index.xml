@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NOIP专题 on Leo101&#39;s blog</title>
-    <link>http://powerleo101.github.io/categories/noip%E4%B8%93%E9%A2%98/</link>
+    <link>https://leo101.net/categories/noip%E4%B8%93%E9%A2%98/</link>
     <description>Recent content in NOIP专题 on Leo101&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Apr 2019 19:09:24 +0800</lastBuildDate>
     
-	<atom:link href="http://powerleo101.github.io/categories/noip%E4%B8%93%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leo101.net/categories/noip%E4%B8%93%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>NOIP2008</title>
-      <link>http://powerleo101.github.io/2019/noip2008/</link>
+      <link>https://leo101.net/2019/noip2008/</link>
       <pubDate>Wed, 17 Apr 2019 19:09:24 +0800</pubDate>
       
-      <guid>http://powerleo101.github.io/2019/noip2008/</guid>
+      <guid>https://leo101.net/2019/noip2008/</guid>
       <description>笨小猴 暴力找出出现次数最大最小的两个字符
 再暴力判断是不是质数
 火柴棒等式 先想一下这个等式最大是多少

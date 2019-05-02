@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leo101&#39;s blog on Leo101&#39;s blog</title>
-    <link>http://powerleo101.github.io/</link>
+    <link>https://leo101.net/</link>
     <description>Recent content in Leo101&#39;s blog on Leo101&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,10 +10,10 @@
     
     <item>
       <title>ChatRoom</title>
-      <link>http://powerleo101.github.io/chatroom/</link>
+      <link>https://leo101.net/chatroom/</link>
       <pubDate>Sun, 21 Apr 2019 15:27:25 +0800</pubDate>
       
-      <guid>http://powerleo101.github.io/chatroom/</guid>
+      <guid>https://leo101.net/chatroom/</guid>
       <description>&lt;p&gt;纯chat房间,everybody嗨起来!!!&lt;/p&gt;
 
 &lt;p&gt;有问题可以在这里反馈 😏&lt;/p&gt;
@@ -24,10 +24,10 @@
     
     <item>
       <title>NOIP2008</title>
-      <link>http://powerleo101.github.io/2019/noip2008/</link>
+      <link>https://leo101.net/2019/noip2008/</link>
       <pubDate>Wed, 17 Apr 2019 19:09:24 +0800</pubDate>
       
-      <guid>http://powerleo101.github.io/2019/noip2008/</guid>
+      <guid>https://leo101.net/2019/noip2008/</guid>
       <description>
 
 &lt;h2 id=&#34;笨小猴&#34;&gt;笨小猴&lt;/h2&gt;
@@ -74,10 +74,10 @@
     
     <item>
       <title>hugo搭建博客使用总结</title>
-      <link>http://powerleo101.github.io/2019/hugo-summary/</link>
+      <link>https://leo101.net/2019/hugo-summary/</link>
       <pubDate>Sat, 13 Apr 2019 17:29:18 +0800</pubDate>
       
-      <guid>http://powerleo101.github.io/2019/hugo-summary/</guid>
+      <guid>https://leo101.net/2019/hugo-summary/</guid>
       <description>
 
 &lt;p&gt;在使用本文章之前，你需要有一定的 git 基础&lt;/p&gt;
@@ -170,10 +170,10 @@
     
     <item>
       <title>Hello World</title>
-      <link>http://powerleo101.github.io/2019/hello-world/</link>
+      <link>https://leo101.net/2019/hello-world/</link>
       <pubDate>Sat, 13 Apr 2019 16:48:24 +0800</pubDate>
       
-      <guid>http://powerleo101.github.io/2019/hello-world/</guid>
+      <guid>https://leo101.net/2019/hello-world/</guid>
       <description>&lt;p&gt;本站点的第一篇博文&lt;/p&gt;
 
 &lt;p&gt;以下为测试&lt;/p&gt;
@@ -190,10 +190,10 @@
     
     <item>
       <title>Links</title>
-      <link>http://powerleo101.github.io/links/</link>
+      <link>https://leo101.net/links/</link>
       <pubDate>Sat, 13 Apr 2019 16:39:03 +0800</pubDate>
       
-      <guid>http://powerleo101.github.io/links/</guid>
+      <guid>https://leo101.net/links/</guid>
       <description>
 
 &lt;h2 id=&#34;同届神仙&#34;&gt;同届神仙&lt;/h2&gt;
@@ -236,10 +236,10 @@
     
     <item>
       <title>About</title>
-      <link>http://powerleo101.github.io/about/</link>
+      <link>https://leo101.net/about/</link>
       <pubDate>Sat, 13 Apr 2019 16:36:23 +0800</pubDate>
       
-      <guid>http://powerleo101.github.io/about/</guid>
+      <guid>https://leo101.net/about/</guid>
       <description>&lt;p&gt;坐标: CN-HN-CS-CJ&lt;/p&gt;
 
 &lt;p&gt;不定期更新&lt;/p&gt;
