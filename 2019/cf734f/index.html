@@ -9,9 +9,9 @@
   <meta name="description" content="Leo101&#39;s blog">
   
   
-  <link rel="prev" href="https://leo101.net/2019/hugo-summary/" />
-  <link rel="next" href="https://leo101.net/2019/cf734f/" />
-  <link rel="canonical" href="https://leo101.net/2019/noip2008/" />
+  <link rel="prev" href="https://leo101.net/2019/noip2008/" />
+  
+  <link rel="canonical" href="https://leo101.net/2019/cf734f/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,10 +22,10 @@
   <title>
        
        
-           NOIP2008 | Leo101&#39;s blog
+           CF734F | Leo101&#39;s blog
        
   </title>
-  <meta name="title" content="NOIP2008 | Leo101&#39;s blog">
+  <meta name="title" content="CF734F | Leo101&#39;s blog">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/leo101.net"
     },
     "articleSection" : "posts",
-    "name" : "NOIP2008",
-    "headline" : "NOIP2008",
-    "description" : "笨小猴 暴力找出出现次数最大最小的两个字符\n再暴力判断是不是质数\n火柴棒等式 先想一下这个等式最大是多少\n每一位都是 1 肯定是最优的\n那么也就是 $(24 - 4) \/ (3 * 2)$\n大概是 1000\n那么我们把 1~1000 这些数字所需的火柴都算出来\n然后暴力匹配两两相加\n传纸条 首先我们可以吧问题转化成两个,都是 (1,1) 走向 (n, m)要求进过的路线不重复\n设 $dp[i][j][k][l]$ 表示第一个人在 (i, j), 第二个人在 (k, l) 的最大贡献\n转移就是从左边和上面的两个节点转移过来\n在转移的过程中需要保证每个节点只被算到一次\n双栈排序 可以发现一个若有一组位置 $i \x26lt; j \x26lt; k$, 使得 $p_k \x26lt; p_i \x26lt; p_j$,那么这组位置不能在一个栈里,需要用到第二个栈\n用这些关系构建一个二分图,$n ^ 2$匹配每个节点,这个时候可以把不合法的情况判掉,因为要求字典序最小,所以优先选第一个栈\n知道了每个节点在那个栈里,接下来就是贪心模拟\n尽量放,知道不合法再弹出即可",
+    "name" : "CF734F",
+    "headline" : "CF734F",
+    "description" : "题面 Codeforces\nLuogu\n题解 总而言之这题是真的神仙\n首先看到这两个式子\nb[i]=(a[i] and a[1])\x2b(a[i] and a[2])\x2b...\x2b(a[i] and a[n]) c[i]=(a[i] or a[1])\x2b(a[i] or a[2])\x2b...\x2b(a[i] or a[n])  因为\n$$(a \x26amp; b) \x2b (a | b) = a \x2b b$$\n所以\n$$b[i] \x2b c[i] = (\\sum_{j = 1}^{n}{a[j]})\x2bn *a[i]$$\n所以\n$$\\sum{i = 1}^{n} = 2 * n * \\sum{i = 1}^{n}{a[i]}$$\n所以\n$$\\frac{\\sum{i = 1}^{n}{(b[i] \x2bc[i])}}{2*n} {=\\sum{i = 1}^{n}{a[i]}}$$\n然后我们就可以得到所有 a[i] 的和了\n然后再根据\n$$b[i] \x2b c[i] = (\\sum_{j = 1}^{n}{a[j]})\x2bn *a[i]$$",
     "inLanguage" : "en-us",
     "author" : "Leo101",
     "creator" : "Leo101",
@@ -54,11 +54,11 @@
     "accountablePerson" : "Leo101",
     "copyrightHolder" : "Leo101",
     "copyrightYear" : "2019",
-    "datePublished": "2019-04-17 19:09:24 \x2b0800 CST",
-    "dateModified" : "2019-04-17 19:09:24 \x2b0800 CST",
-    "url" : "https:\/\/leo101.net\/2019\/noip2008\/",
-    "wordCount" : "57",
-    "keywords" : [ "NOIP专题", "Leo101\x27s blog"]
+    "datePublished": "2019-05-02 12:02:39 \x2b0800 CST",
+    "dateModified" : "2019-05-02 12:02:39 \x2b0800 CST",
+    "url" : "https:\/\/leo101.net\/2019\/cf734f\/",
+    "wordCount" : "451",
+    "keywords" : [ "贪心","构造", "Leo101\x27s blog"]
 }
 </script>
 
@@ -125,16 +125,17 @@
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">NOIP2008</h1>
+        <h1 class="post-title" itemprop="name headline">CF734F</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://leo101.net" rel="author">Leo101</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2019-04-17 itemprop="datePublished">April 17, 2019</time>
+                on <time datetime=2019-05-02 itemprop="datePublished">May 2, 2019</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://leo101.net/categories/noip%E4%B8%93%E9%A2%98/"> NOIP专题 </a>
+                        <a href="https://leo101.net/categories/cjk%E8%B4%AA%E5%BF%83%E4%B8%8E%E6%9E%84%E9%80%A0/"> cjk贪心与构造 </a>
+                        <a href="https://leo101.net/categories/codeforces/"> Codeforces </a>
                         
                 </span>
         </div>
@@ -157,45 +158,144 @@
 
           
 
-<h2 id="笨小猴">笨小猴</h2>
+<h2 id="题面">题面</h2>
 
-<p>暴力找出出现次数最大最小的两个字符</p>
+<p><a href="http://codeforces.com/problemset/problem/734/F" rel="nofollow noreferrer" target="_blank">Codeforces</a></p>
 
-<p>再暴力判断是不是质数</p>
+<p><a href="[https://www.luogu.org/problemnew/show/CF734F](https://www.luogu.org/problemnew/show/CF734F)" rel="nofollow noreferrer" target="_blank">Luogu</a></p>
 
-<h2 id="火柴棒等式">火柴棒等式</h2>
+<h2 id="题解">题解</h2>
 
-<p>先想一下这个等式最大是多少</p>
+<p>总而言之这题是真的神仙</p>
 
-<p>每一位都是 1 肯定是最优的</p>
+<p>首先看到这两个式子</p>
 
-<p>那么也就是 $(24 - 4) / (3 * 2)$</p>
+<pre><code>b[i]=(a[i] and a[1])+(a[i] and a[2])+...+(a[i] and a[n])
+c[i]=(a[i] or a[1])+(a[i] or a[2])+...+(a[i] or a[n])
+</code></pre>
 
-<p>大概是 1000</p>
+<p>因为</p>
 
-<p>那么我们把 1~1000 这些数字所需的火柴都算出来</p>
+<p>$$(a &amp; b) + (a | b) = a + b$$</p>
 
-<p>然后暴力匹配两两相加</p>
+<p>所以</p>
 
-<h2 id="传纸条">传纸条</h2>
+<p>$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i]$$</p>
 
-<p>首先我们可以吧问题转化成两个,都是 (1,1) 走向 (n, m)要求进过的路线不重复</p>
+<p>所以</p>
 
-<p>设 $dp[i][j][k][l]$ 表示第一个人在 (i, j), 第二个人在 (k, l) 的最大贡献</p>
+<p>$$\sum<em>{i = 1}^{n} = 2 * n * \sum</em>{i = 1}^{n}{a[i]}$$</p>
 
-<p>转移就是从左边和上面的两个节点转移过来</p>
+<p>所以</p>
 
-<p>在转移的过程中需要保证每个节点只被算到一次</p>
+<p>$$\frac{\sum<em>{i = 1}^{n}{(b[i] +c[i])}}{2*n} {=\sum</em>{i = 1}^{n}{a[i]}}$$</p>
 
-<h2 id="双栈排序">双栈排序</h2>
+<p>然后我们就可以得到所有 a[i] 的和了</p>
 
-<p>可以发现一个若有一组位置 $i &lt; j &lt; k$, 使得 $p_k &lt; p_i &lt; p_j$,那么这组位置不能在一个栈里,需要用到第二个栈</p>
+<p>然后再根据</p>
 
-<p>用这些关系构建一个二分图,$n ^ 2$匹配每个节点,这个时候可以把不合法的情况判掉,因为要求字典序最小,所以优先选第一个栈</p>
+<p>$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i]$$</p>
 
-<p>知道了每个节点在那个栈里,接下来就是贪心模拟</p>
+<p>得到每一个 $a[i]$ 的值</p>
 
-<p>尽量放,知道不合法再弹出即可</p>
+<p>接下来就是验证，常规的$O(n^2)$肯定不行，直接用位运算优化一下就可以了</p>
+
+<p>对于与操作</p>
+
+<p>a[i] 的某一位如果是 0 这一位得到的就都是 0 ，如果是 1 就得到所有这一位上的 1</p>
+
+<p>对于或操作</p>
+
+<p>a[i] 某一位如果是1这一位就有 n 个 1 ，是 0 就加上其他数的 1 ，实际上就是这一位上所以的 1</p>
+
+<hr />
+
+<h2 id="代码">代码</h2>
+
+<pre><code class="language-cpp">/**************************
+  * Author : Leo101
+  * Problem : CF734F Anton and School
+  * Tags : 贪心, 构造
+**************************/
+#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+#include &lt;algorithm&gt;
+#include &lt;cstring&gt;
+#define _FILE(s) freopen(#s&quot;.in&quot;, &quot;r&quot;, stdin); freopen(#s&quot;.out&quot;, &quot;w&quot;, stdout)
+#define gi get_int()
+typedef unsigned long long LL;
+#define int LL
+const int MAXN = 2e6;
+int get_int()
+{
+	int x = 0, y = 1; char ch = getchar();
+	while (!isdigit(ch) &amp;&amp; ch != '-') ch = getchar();
+	if (ch == '-') y = -1, ch = getchar();
+	while (isdigit(ch)) x = x * 10 + ch - '0', ch = getchar();
+	return x * y;
+}
+
+int numA[MAXN], numB[MAXN], numC[MAXN], count[64];
+
+bool check(int n)
+{
+	// get sum
+	for (int i = 0; i &lt; n; i++)
+		for (int j = 0; j &lt; 64; j++) 
+			count[j] += (numA[i] &gt;&gt; j) &amp; 1;
+
+	// operation &amp;
+	for (int i = 0; i &lt; n; i++) {
+		int temp = 0;
+		for (int j = 0; j &lt; 64; j++) {
+			if (((numA[i] &gt;&gt; j) &amp; 1) == 0) continue;
+			temp += count[j] &lt;&lt; j;
+		}
+		if (temp != numB[i]) return false;
+	}
+
+	// operation |
+	for (int i = 0; i &lt; n; i++) {
+		int temp = 0;
+		for (int j = 0; j &lt; 64; j++) {
+			if (((numA[i] &gt;&gt; j) &amp; 1) == 1) {
+				temp += n &lt;&lt; j;
+			} else {
+				temp += count[j] &lt;&lt; j;
+			}
+		}
+		if (temp != numC[i]) return false;
+	}
+
+	return true;
+}
+
+signed main()
+{
+	_FILE(code);
+
+	int n = gi;
+	for (int i = 0; i &lt; n; i++) numB[i] = gi;
+	for (int i = 0; i &lt; n; i++) numC[i] = gi;
+
+	int sum = 0;
+	for (int i = 0; i &lt; n; i++) 
+		sum += numB[i] + numC[i];
+	sum /= 2 * n;
+
+	for (int i = 0; i &lt; n; i++) 
+		numA[i] = ((numB[i] + numC[i]) - sum) / n;
+
+	if (check(n) == false) {
+		printf(&quot;-1&quot;);
+		return 0;
+	}
+
+	for (int i = 0; i &lt; n; i++) std :: cout &lt;&lt; numA[i] &lt;&lt; &quot; &quot;;
+
+	return 0;
+}
+</code></pre>
 
     </div>
 
@@ -210,7 +310,7 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://leo101.net/2019/noip2008/>https://leo101.net/2019/noip2008/</span>
+                    <a href=https://leo101.net/2019/cf734f/>https://leo101.net/2019/cf734f/</span>
             </p>
             
              
@@ -226,8 +326,11 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://leo101.net/tags/noip%E4%B8%93%E9%A2%98/">
-                    #NOIP专题</a></span>
+            <span class="tag"><a href="https://leo101.net/tags/%E8%B4%AA%E5%BF%83/">
+                    #贪心</a></span>
+            
+            <span class="tag"><a href="https://leo101.net/tags/%E6%9E%84%E9%80%A0/">
+                    #构造</a></span>
             
             </section>
         
@@ -239,10 +342,8 @@
 
     <div class="post-nav">
         
-        <a href="https://leo101.net/2019/hugo-summary/" class="prev" rel="prev" title="hugo搭建博客使用总结"><i class="iconfont icon-left"></i>&nbsp;hugo搭建博客使用总结</a>
+        <a href="https://leo101.net/2019/noip2008/" class="prev" rel="prev" title="NOIP2008"><i class="iconfont icon-left"></i>&nbsp;NOIP2008</a>
          
-        
-        <a href="https://leo101.net/2019/cf734f/" class="next" rel="next" title="CF734F">CF734F&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

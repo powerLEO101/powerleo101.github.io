@@ -5,8 +5,157 @@
     <description>Recent content in Leo101&#39;s blog on Leo101&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Apr 2019 15:27:25 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 May 2019 12:02:39 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CF734F</title>
+      <link>https://leo101.net/2019/cf734f/</link>
+      <pubDate>Thu, 02 May 2019 12:02:39 +0800</pubDate>
+      
+      <guid>https://leo101.net/2019/cf734f/</guid>
+      <description>
+
+&lt;h2 id=&#34;题面&#34;&gt;题面&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://codeforces.com/problemset/problem/734/F&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Codeforces&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;[https://www.luogu.org/problemnew/show/CF734F](https://www.luogu.org/problemnew/show/CF734F)&#34; rel=&#34;nofollow noreferrer&#34; target=&#34;_blank&#34;&gt;Luogu&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;题解&#34;&gt;题解&lt;/h2&gt;
+
+&lt;p&gt;总而言之这题是真的神仙&lt;/p&gt;
+
+&lt;p&gt;首先看到这两个式子&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;b[i]=(a[i] and a[1])+(a[i] and a[2])+...+(a[i] and a[n])
+c[i]=(a[i] or a[1])+(a[i] or a[2])+...+(a[i] or a[n])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;因为&lt;/p&gt;
+
+&lt;p&gt;$$(a &amp;amp; b) + (a | b) = a + b$$&lt;/p&gt;
+
+&lt;p&gt;所以&lt;/p&gt;
+
+&lt;p&gt;$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i]$$&lt;/p&gt;
+
+&lt;p&gt;所以&lt;/p&gt;
+
+&lt;p&gt;$$\sum&lt;em&gt;{i = 1}^{n} = 2 * n * \sum&lt;/em&gt;{i = 1}^{n}{a[i]}$$&lt;/p&gt;
+
+&lt;p&gt;所以&lt;/p&gt;
+
+&lt;p&gt;$$\frac{\sum&lt;em&gt;{i = 1}^{n}{(b[i] +c[i])}}{2*n} {=\sum&lt;/em&gt;{i = 1}^{n}{a[i]}}$$&lt;/p&gt;
+
+&lt;p&gt;然后我们就可以得到所有 a[i] 的和了&lt;/p&gt;
+
+&lt;p&gt;然后再根据&lt;/p&gt;
+
+&lt;p&gt;$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i]$$&lt;/p&gt;
+
+&lt;p&gt;得到每一个 $a[i]$ 的值&lt;/p&gt;
+
+&lt;p&gt;接下来就是验证，常规的$O(n^2)$肯定不行，直接用位运算优化一下就可以了&lt;/p&gt;
+
+&lt;p&gt;对于与操作&lt;/p&gt;
+
+&lt;p&gt;a[i] 的某一位如果是 0 这一位得到的就都是 0 ，如果是 1 就得到所有这一位上的 1&lt;/p&gt;
+
+&lt;p&gt;对于或操作&lt;/p&gt;
+
+&lt;p&gt;a[i] 某一位如果是1这一位就有 n 个 1 ，是 0 就加上其他数的 1 ，实际上就是这一位上所以的 1&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;/**************************
+  * Author : Leo101
+  * Problem : CF734F Anton and School
+  * Tags : 贪心, 构造
+**************************/
+#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;cstdio&amp;gt;
+#include &amp;lt;algorithm&amp;gt;
+#include &amp;lt;cstring&amp;gt;
+#define _FILE(s) freopen(#s&amp;quot;.in&amp;quot;, &amp;quot;r&amp;quot;, stdin); freopen(#s&amp;quot;.out&amp;quot;, &amp;quot;w&amp;quot;, stdout)
+#define gi get_int()
+typedef unsigned long long LL;
+#define int LL
+const int MAXN = 2e6;
+int get_int()
+{
+	int x = 0, y = 1; char ch = getchar();
+	while (!isdigit(ch) &amp;amp;&amp;amp; ch != &#39;-&#39;) ch = getchar();
+	if (ch == &#39;-&#39;) y = -1, ch = getchar();
+	while (isdigit(ch)) x = x * 10 + ch - &#39;0&#39;, ch = getchar();
+	return x * y;
+}
+
+int numA[MAXN], numB[MAXN], numC[MAXN], count[64];
+
+bool check(int n)
+{
+	// get sum
+	for (int i = 0; i &amp;lt; n; i++)
+		for (int j = 0; j &amp;lt; 64; j++) 
+			count[j] += (numA[i] &amp;gt;&amp;gt; j) &amp;amp; 1;
+
+	// operation &amp;amp;
+	for (int i = 0; i &amp;lt; n; i++) {
+		int temp = 0;
+		for (int j = 0; j &amp;lt; 64; j++) {
+			if (((numA[i] &amp;gt;&amp;gt; j) &amp;amp; 1) == 0) continue;
+			temp += count[j] &amp;lt;&amp;lt; j;
+		}
+		if (temp != numB[i]) return false;
+	}
+
+	// operation |
+	for (int i = 0; i &amp;lt; n; i++) {
+		int temp = 0;
+		for (int j = 0; j &amp;lt; 64; j++) {
+			if (((numA[i] &amp;gt;&amp;gt; j) &amp;amp; 1) == 1) {
+				temp += n &amp;lt;&amp;lt; j;
+			} else {
+				temp += count[j] &amp;lt;&amp;lt; j;
+			}
+		}
+		if (temp != numC[i]) return false;
+	}
+
+	return true;
+}
+
+signed main()
+{
+	_FILE(code);
+
+	int n = gi;
+	for (int i = 0; i &amp;lt; n; i++) numB[i] = gi;
+	for (int i = 0; i &amp;lt; n; i++) numC[i] = gi;
+
+	int sum = 0;
+	for (int i = 0; i &amp;lt; n; i++) 
+		sum += numB[i] + numC[i];
+	sum /= 2 * n;
+
+	for (int i = 0; i &amp;lt; n; i++) 
+		numA[i] = ((numB[i] + numC[i]) - sum) / n;
+
+	if (check(n) == false) {
+		printf(&amp;quot;-1&amp;quot;);
+		return 0;
+	}
+
+	for (int i = 0; i &amp;lt; n; i++) std :: cout &amp;lt;&amp;lt; numA[i] &amp;lt;&amp;lt; &amp;quot; &amp;quot;;
+
+	return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>ChatRoom</title>

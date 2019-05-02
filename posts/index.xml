@@ -6,10 +6,33 @@
     <description>Recent content in Posts on Leo101&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Apr 2019 19:09:24 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 May 2019 12:02:39 +0800</lastBuildDate>
     
 	<atom:link href="https://leo101.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CF734F</title>
+      <link>https://leo101.net/2019/cf734f/</link>
+      <pubDate>Thu, 02 May 2019 12:02:39 +0800</pubDate>
+      
+      <guid>https://leo101.net/2019/cf734f/</guid>
+      <description>题面 Codeforces
+Luogu
+题解 总而言之这题是真的神仙
+首先看到这两个式子
+b[i]=(a[i] and a[1])+(a[i] and a[2])+...+(a[i] and a[n]) c[i]=(a[i] or a[1])+(a[i] or a[2])+...+(a[i] or a[n])  因为
+$$(a &amp;amp; b) + (a | b) = a + b$$
+所以
+$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i]$$
+所以
+$$\sum{i = 1}^{n} = 2 * n * \sum{i = 1}^{n}{a[i]}$$
+所以
+$$\frac{\sum{i = 1}^{n}{(b[i] +c[i])}}{2*n} {=\sum{i = 1}^{n}{a[i]}}$$
+然后我们就可以得到所有 a[i] 的和了
+然后再根据
+$$b[i] + c[i] = (\sum_{j = 1}^{n}{a[j]})+n *a[i]$$</description>
+    </item>
     
     <item>
       <title>NOIP2008</title>
