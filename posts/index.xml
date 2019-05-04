@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Leo101&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 May 2019 15:41:28 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 04 May 2019 10:47:29 +0800</lastBuildDate>
     
 	<atom:link href="https://leo101.net/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NOIP2009</title>
+      <link>https://leo101.net/2019/noip2009/</link>
+      <pubDate>Sat, 04 May 2019 10:47:29 +0800</pubDate>
+      
+      <guid>https://leo101.net/2019/noip2009/</guid>
+      <description>潜伏者 暴力匹配即可
+Hankson 的趣味题 首先因为 x 是 b1 的因数，所以先枚举 x，也就是枚举 b1 的因数
+接下来就是判断合不合法了
+有两种判断方法
+方法 1：
+看 x 是否满足 $x * b0 == b1 * gcd(x1, b0)$ 和 $x *a0 = a1 * lcm(x1, a0)$
+这个很好解释，原理是 $lcm(a, b) * gcd(a, b) == a *b$，然后根据这个式子退出 x 要满足的式子，化简一下就可以了
+方法 2：
+看 x 是否满足 $gcd(b1 / x, b1 / b0) == 1$ 和 $gcd(a0 / a1, x / a1) == 1$
+gcd 和 lcm 的性质</description>
+    </item>
     
     <item>
       <title>jag2017autumnJ Farm Village</title>

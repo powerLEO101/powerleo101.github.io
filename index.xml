@@ -5,8 +5,65 @@
     <description>Recent content in Leo101&#39;s blog on Leo101&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 May 2019 15:41:28 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 04 May 2019 10:47:29 +0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>NOIP2009</title>
+      <link>https://leo101.net/2019/noip2009/</link>
+      <pubDate>Sat, 04 May 2019 10:47:29 +0800</pubDate>
+      
+      <guid>https://leo101.net/2019/noip2009/</guid>
+      <description>
+
+&lt;h2 id=&#34;潜伏者&#34;&gt;潜伏者&lt;/h2&gt;
+
+&lt;p&gt;暴力匹配即可&lt;/p&gt;
+
+&lt;h2 id=&#34;hankson-的趣味题&#34;&gt;Hankson 的趣味题&lt;/h2&gt;
+
+&lt;p&gt;首先因为 x 是 b1 的因数，所以先枚举 x，也就是枚举 b1 的因数&lt;/p&gt;
+
+&lt;p&gt;接下来就是判断合不合法了&lt;/p&gt;
+
+&lt;p&gt;有两种判断方法&lt;/p&gt;
+
+&lt;p&gt;方法 1：&lt;/p&gt;
+
+&lt;p&gt;看 x 是否满足 $x * b0 == b1 * gcd(x1, b0)$ 和 $x *a0 = a1 * lcm(x1, a0)$&lt;/p&gt;
+
+&lt;p&gt;这个很好解释，原理是 $lcm(a, b) * gcd(a, b) == a *b$，然后根据这个式子退出 x 要满足的式子，化简一下就可以了&lt;/p&gt;
+
+&lt;p&gt;方法 2：&lt;/p&gt;
+
+&lt;p&gt;看 x 是否满足 $gcd(b1 / x, b1 / b0) == 1$ 和 $gcd(a0 / a1, x / a1) == 1$&lt;/p&gt;
+
+&lt;p&gt;gcd 和 lcm 的性质&lt;/p&gt;
+
+&lt;p&gt;显然方法 2 比方法 1 更优，因为 lcm 复杂度更大&lt;/p&gt;
+
+&lt;h2 id=&#34;最优贸易&#34;&gt;最优贸易&lt;/h2&gt;
+
+&lt;p&gt;建一个分层图，有 3 层&lt;/p&gt;
+
+&lt;p&gt;第一层到第二层的边表示买入，边权为负&lt;/p&gt;
+
+&lt;p&gt;第二层到第三层的边表示卖出，边权为正&lt;/p&gt;
+
+&lt;p&gt;然后跑一遍 spfa 就可以了&lt;/p&gt;
+
+&lt;h2 id=&#34;靶形数独&#34;&gt;靶形数独&lt;/h2&gt;
+
+&lt;p&gt;普通 dfs，不过要加几个剪枝&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;以未知位置少的地方开始搜，可以减少失败的次数&lt;/li&gt;
+&lt;li&gt;可行性剪枝&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;然后就 AC 了  😂&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>jag2017autumnJ Farm Village</title>
