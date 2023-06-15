@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leo Blog</title>
-    <link>http://example.org/</link>
+    <link>https://powerleo101.github.io/</link>
     <description>Recent content on Leo Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jun 2023 16:42:58 -0400</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jun 2023 16:42:58 -0400</lastBuildDate><atom:link href="https://powerleo101.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gradient</title>
-      <link>http://example.org/gradient/</link>
+      <link>https://powerleo101.github.io/gradient/</link>
       <pubDate>Thu, 15 Jun 2023 16:42:58 -0400</pubDate>
       
-      <guid>http://example.org/gradient/</guid>
+      <guid>https://powerleo101.github.io/gradient/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>Projectile_motion</title>
-      <link>http://example.org/projectile_motion/</link>
+      <link>https://powerleo101.github.io/projectile_motion/</link>
       <pubDate>Thu, 15 Jun 2023 16:19:59 -0400</pubDate>
       
-      <guid>http://example.org/projectile_motion/</guid>
+      <guid>https://powerleo101.github.io/projectile_motion/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>Non-orientable surface</title>
-      <link>http://example.org/nonorientablesurface/</link>
+      <link>https://powerleo101.github.io/nonorientablesurface/</link>
       <pubDate>Thu, 15 Jun 2023 15:52:25 -0400</pubDate>
       
-      <guid>http://example.org/nonorientablesurface/</guid>
+      <guid>https://powerleo101.github.io/nonorientablesurface/</guid>
       <description> </description>
     </item>
     

@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Leo Blog</title>
-    <link>http://example.org/tags/</link>
+    <link>https://powerleo101.github.io/tags/</link>
     <description>Recent content in Tags on Leo Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jun 2023 16:42:58 -0400</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jun 2023 16:42:58 -0400</lastBuildDate><atom:link href="https://powerleo101.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>gradient</title>
-      <link>http://example.org/tags/gradient/</link>
+      <link>https://powerleo101.github.io/tags/gradient/</link>
       <pubDate>Thu, 15 Jun 2023 16:42:58 -0400</pubDate>
       
-      <guid>http://example.org/tags/gradient/</guid>
+      <guid>https://powerleo101.github.io/tags/gradient/</guid>
       <description></description>
     </item>
     
     <item>
       <title>surface</title>
-      <link>http://example.org/tags/surface/</link>
+      <link>https://powerleo101.github.io/tags/surface/</link>
       <pubDate>Thu, 15 Jun 2023 16:42:58 -0400</pubDate>
       
-      <guid>http://example.org/tags/surface/</guid>
+      <guid>https://powerleo101.github.io/tags/surface/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vector</title>
-      <link>http://example.org/tags/vector/</link>
+      <link>https://powerleo101.github.io/tags/vector/</link>
       <pubDate>Thu, 15 Jun 2023 16:42:58 -0400</pubDate>
       
-      <guid>http://example.org/tags/vector/</guid>
+      <guid>https://powerleo101.github.io/tags/vector/</guid>
       <description></description>
     </item>
     
